@@ -3,6 +3,29 @@ Mikrotik-API
 
 Python interface and command line tool for Mikrotik API.
 
+Usage
+=====
+
+Usage tries to be similar to cli. Commands are prefixed with same paths as in ssh. Options are given using key=value syntax.
+
+print
+-----
+
+    /path print [where arg1=value1 [arg2=value2] ...]
+    
+    
+set
+---
+
+    /path set [id] arg1=value1 [arg2=value2] ...
+
+
+add
+---
+
+    /path add arg1=value1 [arg2=value2] ...
+
+
 License
 ========
 
