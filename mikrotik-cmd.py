@@ -77,10 +77,10 @@ class MikrotikCommandLoop(cmd.Cmd):
             if i.lower() == 'where':
                 argument_dict = queries
                 continue
-            if i.lower() in ['print']:
+            if i.lower() in ['print', 'add']:
                 command = "%s/%s" % (command, i.lower())
                 continue
-            if i.lower() == 'set':
+            if i.lower() in ['set', 'remove']:
                 command = "%s/%s" % (command, i.lower())
                 expect_number = True
                 continue

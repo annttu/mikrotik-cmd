@@ -12,19 +12,29 @@ print
 -----
 
     /path print [where arg1=value1 [arg2=value2] ...]
-    
+
+Print prints current status of values in given path. Optional where limits query output to contain only values with those values set.
     
 set
 ---
 
     /path set [id] arg1=value1 [arg2=value2] ...
 
+Set sets new values for existing rows. Id is mandatory if value have ``.id`` attribute. 
 
 add
 ---
 
     /path add arg1=value1 [arg2=value2] ...
+    
+Add adds new row to path.
 
+remove
+----
+
+     /path remove id
+
+Remove removes row from path with id ``id``
 
 License
 ========
